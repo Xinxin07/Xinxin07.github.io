@@ -1,0 +1,354 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>光度学基础与光度立体法 | Jinx</title><meta name="author" content="Jinx"><meta name="copyright" content="Jinx"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="光度学基础知识![[Pasted image 20250428154805.png|center]] 光度学计量可见光：研究光的强弱–&gt;人眼（主观） 辐射度学计量电磁辐射：研究辐射强弱–&gt;功率（物理） 辐射能通量    Radiant energy计算公式为$\Psi&#x3D;\int \psi(\lambda)d\lambda$，单位为$W$,$\psi(\lambda)$为辐射能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="光度学基础与光度立体法">
+<meta property="og:url" content="http://example.com/2025/09/12/%E5%85%89%E5%AD%A6/index.html">
+<meta property="og:site_name" content="Jinx">
+<meta property="og:description" content="光度学基础知识![[Pasted image 20250428154805.png|center]] 光度学计量可见光：研究光的强弱–&gt;人眼（主观） 辐射度学计量电磁辐射：研究辐射强弱–&gt;功率（物理） 辐射能通量    Radiant energy计算公式为$\Psi&#x3D;\int \psi(\lambda)d\lambda$，单位为$W$,$\psi(\lambda)$为辐射能">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/avatar.png">
+<meta property="article:published_time" content="2025-09-12T08:25:24.267Z">
+<meta property="article:modified_time" content="2025-09-12T08:27:30.504Z">
+<meta property="article:author" content="Jinx">
+<meta property="article:tag" content="光学">
+<meta property="article:tag" content="视触觉传感器">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "光度学基础与光度立体法",
+  "url": "http://example.com/2025/09/12/%E5%85%89%E5%AD%A6/",
+  "image": "http://example.com/img/avatar.png",
+  "datePublished": "2025-09-12T08:25:24.267Z",
+  "dateModified": "2025-09-12T08:27:30.504Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jinx",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/09/12/%E5%85%89%E5%AD%A6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '光度学基础与光度立体法',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(/img/toppage.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Jinx</span></a><a class="nav-page-title" href="/"><span class="site-name">光度学基础与光度立体法</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">光度学基础与光度立体法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-09-12T08:25:24.267Z" title="发表于 2025-09-12 16:25:24">2025-09-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-09-12T08:27:30.504Z" title="更新于 2025-09-12 16:27:30">2025-09-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="光度学基础知识"><a href="#光度学基础知识" class="headerlink" title="光度学基础知识"></a>光度学基础知识</h1><p>![[Pasted image 20250428154805.png|center]]</p>
+<h2 id="光度学"><a href="#光度学" class="headerlink" title="光度学"></a>光度学</h2><p>计量可见光：研究光的强弱–&gt;人眼（主观）</p>
+<h2 id="辐射度学"><a href="#辐射度学" class="headerlink" title="辐射度学"></a>辐射度学</h2><p>计量电磁辐射：研究辐射强弱–&gt;功率（物理）</p>
+<h2 id="辐射能通量-Radiant-energy"><a href="#辐射能通量-Radiant-energy" class="headerlink" title="辐射能通量    Radiant energy"></a>辐射能通量    Radiant energy</h2><p>计算公式为$\Psi&#x3D;\int \psi(\lambda)d\lambda$，单位为$W$,$\psi(\lambda)$为辐射能谱密度。</p>
+<h2 id="视见函数"><a href="#视见函数" class="headerlink" title="视见函数"></a>视见函数</h2><p>光度学中，为了表示人眼对不同波长辐射的敏感度差别，定义了一个函数$V(\lambda)$，称为视见函数，又称为光谱光视效率。明亮环境下，人眼对于波长$\lambda&#x3D;555nm$（黄绿光）的光最灵敏，因此，将波长$\lambda&#x3D;555mn$的视见函数定为1。$V(\lambda)$为明亮环境下视见函数。$V’(\lambda)$为光线暗的环境下的视见函数。</p>
+<p>![[Pasted image 20250428154841.png|center]]</p>
+<h2 id="光通量"><a href="#光通量" class="headerlink" title="光通量"></a>光通量</h2><p>光通量是人眼感觉到的辐射功率,人类对不同波长的光感受到的辐射通量不同, 光源的亮度根据人眼对各个波长的敏感度进行加权,称为光通量,等于单位时间内某波段的辐射能量和该波段的相对视见率的乘积。标准单位是流明（lumen，简记为lm）。发光强度为1cd（坎德拉）的各向同性的光源在1sr（立体弧度）的立体角内放射的光通量为1lm。光通量就是用来表示辐射功率经过人眼的视见函数影响后的光谱辐射功率大小的物理量。计算公式为：</p>
+<p>$$\tag1 \Phi&#x3D;K_M \int V(\lambda) \psi(\lambda)d\lambda$$</p>
+<p>其中，$K_M&#x3D;683lm&#x2F;W$为最大光谱当量（$555nm$）。</p>
+<h2 id="立体角-Solid-angle"><a href="#立体角-Solid-angle" class="headerlink" title="立体角  Solid angle"></a>立体角  Solid angle</h2><p>立体角，常用字母$\Omega$表示，是一个物体对特定点的三维空间的角度。它描述的是站在某一点的观察者测量到的物体大小的尺度。以观测点为球心，构造一个单位球面，任意物体投影到该单位球面上的投影面积，即为该物体相对于该观测点的立体角。因此，立体角是单位球面上的一块面积，这和“平面角是单位圆上的一段弧长”类似。</p>
+<p>锥体的立体角大小定义为，以锥体的顶点为球心作球面，该锥体在球表面截取的面积与球半径平方之比，单位为球面度（$sr$）。</p>
+<p>如图所示，物体表面有无限小的面积$dA$，将$dA$投影到图中蓝色区域$dA’$，该区域对应的立体角$d\omega$的计算公式为 $d\omega&#x3D;\frac{dA’}{r^2}&#x3D;\frac{dAcos\theta}{r^2}$.</p>
+<p>![[Pasted image 20250428154908.png|center]]</p>
+<h2 id="微分立体角-Differential-Solid-Angles"><a href="#微分立体角-Differential-Solid-Angles" class="headerlink" title="微分立体角  Differential Solid Angles"></a>微分立体角  Differential Solid Angles</h2><p>![[file-20250508211618267.png]]<br>$$dA&#x3D;(rd\theta)(r\sin\theta d\phi)&#x3D;r^2\sin\theta d\theta d\phi$$<br>$$d\omega&#x3D;\frac{dA}{r^2}&#x3D;\sin \theta d \theta d \phi$$</p>
+<h2 id="辐射强度-Radiant-intensity"><a href="#辐射强度-Radiant-intensity" class="headerlink" title="辐射强度  Radiant intensity"></a>辐射强度  Radiant intensity</h2><p>辐射强度(<strong>Radiant Intensity</strong>)是点光源单位立体角内发射的辐射通量,记作 $I_e$ , $I_e&#x3D;\frac{d\Phi_{e}}{d\omega}$,其中$d\Phi_{e}$是立体角$d\omega$内的辐射通量,辐射强度的单位为$W&#x2F;sr$。</p>
+<h2 id="辐射亮度-Radiance"><a href="#辐射亮度-Radiance" class="headerlink" title="辐射亮度 Radiance"></a>辐射亮度 Radiance</h2><p>辐射亮度(<strong>Radiance</strong>)是面辐射源在单位投影面积上、单位立体角内的辐射通量（面元沿某方向单位投影面积和单位立体角的辐射通量），单位是$W\cdot m^{-2} \cdot sr^{-1}$，单位$nit$，尼特。</p>
+<p>$$L&#x3D;\frac{d\Phi}{d\omega dscos\theta}&#x3D;\frac{dI}{ds cos\theta} \tag2$$<br>$$L(p,\omega)&#x3D;\frac{d^2\Phi(p,\omega)}{d\omega dA\cos \theta}$$</p>
+<h2 id="辐射照度-Irradiance"><a href="#辐射照度-Irradiance" class="headerlink" title="辐射照度  Irradiance"></a>辐射照度  Irradiance</h2><blockquote>
+<p>power per unit area</p>
+</blockquote>
+<p>辐射照度(<strong>Irradiance</strong>)是单位面积上的辐射通量,单位是$W&#x2F;m^2$。辐射照度的计算公式为：</p>
+<p>$$E&#x3D;\frac{d\Phi}{dA} \tag3$$</p>
+<p>其中$d\Phi$为辐射通量，$dA$为对应面积。如图所示，有一辐射强度为$I$的点光源，受照面积的辐射照度带入公式得：</p>
+<p>$$E&#x3D;\frac{Id\omega}{dA}&#x3D;\frac{I\frac{dAcos\theta}{r^2}}{dA}&#x3D;\frac{Icos\theta}{r^2} \tag4$$</p>
+<p>该公式说明 1)在其他条件不变时,当光源处于表面正上方,即$\theta$为0时,辐射照度最大;2)辐射照度与光源和表面的距离的平方成反比,距离越远,表面辐射照度越小。</p>
+<p>实际情况中的光源有一定面积,考虑扩展光源如右图所示,扩展光源的辐射亮度为$L$,面积大小为$dB$,发射角度为$\theta_e$,投射到表面$dA$的光能为$(LdBcos\theta_e)d\omega[W]$, 表面对应的辐射照度的计算公式如下:</p>
+<p>$$E&#x3D;\frac{(LdBcos\theta_e)d\omega}{dA}&#x3D;L(\frac{dBcos\theta_e}{r^2})cos\theta&#x3D;Ld\omega_icos\theta [W&#x2F;m^2] \tag5$$</p>
+<p>式中$d\omega_i&#x3D;\frac{dBcos\theta_e}{r^2}$是表面$dA$观察到的光源的立体角。等式表明接收的辐射照度$E$与光源的辐射亮度$L$成正比。式中看上去增大光源与表面的距离,保持立体角相同时,表面接受的辐照度相同,与距离无关,但实际上更远的距离在相同的立体角中会 观察到更大的光源面积,增大的距离和在同一立体角中对应增大的光源面积才保持 辐射照度不变。</p>
+<p>![[Pasted image 20250428155026.png|center]]</p>
+<h2 id="场景辐射亮度与图像辐射照度的关系"><a href="#场景辐射亮度与图像辐射照度的关系" class="headerlink" title="场景辐射亮度与图像辐射照度的关系"></a>场景辐射亮度与图像辐射照度的关系</h2><p>![[Pasted image 20250428155040.png#pic_center|center|650]]</p>
+<p>如图所示，从左至右依次是图像平面、镜头和物体表面,设镜头与像平面之间的有效距离为$f$,即成像系统的有效焦距,物体表面的面元$dA_s$通过镜头汇聚后投射到像平面得到对应面元$dA_{i}$,假设物体表面面元$dA_s$处的法线方向为$\pmb n$,相对视线的角度为$\theta$,视线相对光轴的角度为$\alpha$,物体和透镜的距离为$z$,透镜的直径为$d$。由几何关系可知,物体表面面元$dA_s$相对于镜头的立体角与像平面对应面元$dA_i$相对于镜头的立体角相等,$d\omega_s&#x3D;d\omega_i$,也即$\frac{dA_{i}cos\alpha}{(f&#x2F;cos\alpha)^2}&#x3D;\frac{dA_{s}cos\theta}{(z&#x2F;cos\alpha)^2}$,整理得到</p>
+<p>$$\frac{dA_s}{dA_i}&#x3D;\frac{cos\alpha}{cos\theta}(\frac{z}{f})^2 \tag6$$</p>
+<p>透镜相对于表面面元$dA_s$的立体角计算过程如下:</p>
+<p>$$d\omega_L &#x3D; \frac{\frac{\pi d^2}{4}cos\alpha}{(z&#x2F;cos\alpha)^2}&#x3D;\frac{\pi d^2 cos^3\alpha}{4z^2} \tag7$$</p>
+<p>设表面面元$dA_s$入射到透镜的辐射通量为$d\Phi$,则根据式(5)的前部分有</p>
+<p>$$d\Phi &#x3D; LdA_scos\theta d\omega_L \tag8$$</p>
+<p>根据能量守恒,透镜从表面$dA_s$接受的光通量等于透镜投射到$dA_i$的光通量,图像的辐射照度为:</p>
+<p>$$E&#x3D;\frac{d\Phi}{dA_i} \tag9$$</p>
+<p>联立（6）、（7）、（8）和（9）得：</p>
+<p>$$E&#x3D;L\frac{\pi}{4}(\frac{d}{f})^{2}cos^{4}\alpha \tag{10}$$</p>
+<p>由上式可得图像照度$E$与场景亮度$L$成正比,与有效 f 数$(\frac{f}{d})$的倒数的平方成正比(也即和镜头面积成正比,和有效焦距的平方成反比),图像的照度以$cos^{4}\alpha$的倍率由中心向边缘衰减。</p>
+<h2 id="双向反射分布函数"><a href="#双向反射分布函数" class="headerlink" title="双向反射分布函数"></a>双向反射分布函数</h2><p>当表面从光源接受光能时,部分光会被反射。出射辐射亮度与入射辐射照度之比 定义为双向反射分布函数(Bidirectional Reflectance Distribution Function,BRDF)。如图所示，光源相对场景的方向为$(\theta_i ,\phi_I)$,辐射照度为$E(\theta_i ,\phi_i)$,在$(\theta_r , \phi_r)$方向上观察到的辐射亮度为$L(\theta_r ,\phi_r)$,则 BRDF 为:</p>
+<p>$$f_r(p,\omega_i \to \omega_r)&#x3D;f(\theta_i,\phi_i,\theta_r,\phi_r)&#x3D;\frac{L(\theta_r,\phi_r)}{E(\theta_i,\phi_i)} [sr^{-1}] \tag{11}$$</p>
+<p>![[Pasted image 20250428155057.png|center]]</p>
+<p>双向反射分布函数描述了场景中各个点的反射率属性,具有非负性和互易性,交换入射和出射方向函数值不变,即$f(\theta_i,\phi_i,\theta_r,\phi_r)&#x3D;f(\theta_r,\phi_r,\theta_i,\phi_i)$。不同表面的 BRDF 不同。光照射到物体表面向各个方向反射的现象为漫反射,理想漫反射体是朗伯体, 朗伯表面从所有方向看上去一样亮,无论从哪个方向观察都会有相同的表面辐射,朗伯表面的 BRDF 是一个常数,如下式所示:</p>
+<p>$$f_{lambert}&#x3D;\frac{\rho_d}{\pi} (0\le \rho_d \le 1) \tag{12}$$</p>
+<p>其中，$\rho_d&#x3D;0$表示完全黑色的表面,$\rho_d&#x3D;1$表示完全白色的表面。</p>
+<p>![[Pasted image 20250428155110.png|center]]</p>
+<p>假设图 3-5 中的表面为朗伯表面,光源的辐射强度为$J$,光源方向为$\pmb s$,表面法向为$\pmb n$,光源与法线方向的夹角为$\theta$,观察方向为$\pmb v$,由朗伯表面的 BRDF 有$L&#x3D;\frac{\rho_d}{\pi}E$, 又根据式（4）可以得到$E&#x3D;\frac{Jcos\theta_i}{r^2}&#x3D;\frac{J}{r^2}(\pmb n \cdot \pmb s)$,可推出公式</p>
+<p>$$L&#x3D;\frac{\rho_{d}}{\pi} \frac{J}{r^2}(\pmb n \cdot \pmb s)&#x3D;\frac{\rho_d}{\pi} \frac{J}{r^2}cos\theta \tag{13}$$</p>
+<p>由式可知,在光源及其距离不变的情况下,出射辐射亮度随入射方向偏离表面法线方向而减小。</p>
+<h2 id="反射方程"><a href="#反射方程" class="headerlink" title="反射方程"></a>反射方程</h2><p>![[file-20250509150026968.png]]<br>$$L_r(p,\omega_r)&#x3D;\int^{}_{H^2}f_r(p,\omega_i \to \omega_r)L_i(p,\omega_i)\cos \theta_i \mathrm{d}w_i$$</p>
+<h1 id="光度立体法"><a href="#光度立体法" class="headerlink" title="光度立体法"></a>光度立体法</h1><p>光度立体是一种从图像强度值恢复表面三维形状的方法。光度立体法使用不同方向光源对物体表面进行照射,通过相机获取的图像的强度值估计表面的法线方向,进一步通过表面梯度重构得到表面高度。</p>
+<p>如图所示,光源方向为$\pmb s$,物体表面一点的法线方向为$\pmb n$,相机的观察方向为$\pmb v$,令观察方向为坐标系$z$轴的负方向。图像强度可表示为光源、表面法线方向和表面反射的函数,即图像强度$I&#x3D;F(光源，表面法线方向，表面反射)$,函数中的光源包括它的方向、辐射强度和距离。在光度立体中将图像强度、光源和表面反射 当作已知量,将表面法线当作未知量,即可通过函数关系求得表面法线方向。</p>
+<p>![[Pasted image 20250428155122.png|center]]</p>
+<p>假设成像系统是正交投影，则物体上的点$(x,y,z)$投影到像平面$(u,v)$有$u&#x3D;x,v&#x3D;y$,物体表面的高度可表示为$z&#x3D;f(x,y)$，则物体表面的法向量为$[ \frac {\partial f(x,y)}{\partial x},\frac{\partial f(x,y)}{\partial y},-1 ]^T$,定义$p&#x3D;\frac{\partial f(x,y)}{\partial x}$,$q&#x3D;\frac{\partial f(x,y)}{\partial y}$，则法线可写为$[p,q,-1]^T$，单位法线向量为$\pmb n &#x3D;\frac{[p,q,-1]^T}{\sqrt{p^2+q^2+1}}$,将$\pmb n$写为$[n_x,n_y,n_z]^T$，则梯度与单位法线之间的关系为$p&#x3D;-\frac{n_x}{n_z},q&#x3D;-\frac{n_y}{n_z}$。对于给定光源和表面反射特性，图像强度可表示为梯度的函数：</p>
+<p>$$I&#x3D;R(p,q) \tag{14}$$</p>
+<p>假设入射光来自远点光源，物体表面为朗伯表面，结合式（13），图像强度可表示为：</p>
+<p>$$I&#x3D;c\frac{\rho_d}{\pi}\frac{J}{r^2}cos\theta_i&#x3D;\rho \pmb n \cdot \pmb s \tag{15}$$</p>
+<p>式中$c$为常数,与相机参数有关,在成像系统中是已知的,$p_d$为表面反射率,$\frac{J}{r^2}$是与光源有关的参数,由于光源和相机是给定的,不妨令$\rho&#x3D;c\frac{\rho_d}{\pi}\frac{J}{r^2}$,$\rho$为与表面反射属性相关的参数。令光源方向为$[p_S,q_S,-1]^T$,可得: $$I&#x3D;\rho \pmb n \cdot \pmb s&#x3D;\frac{\rho (1+pp_S+qq_S)}{\sqrt{1+p^2+q^2}\sqrt{1+p_S^2+q_S^2}}&#x3D;R(p,q) \tag{16}$$</p>
+<p>假设有一半径为 60 的球,球心位于物体坐标系原点,有三个光源方向分别为$p_{S1}&#x3D;0.7,q_{S1}&#x3D;0.3\mathrm{,}p_{S2}&#x3D;-0.610,q_{S2}&#x3D;0.456\mathrm{,}p_{S3}&#x3D;-0.090,q_{S3}&#x3D;-0.756$,假设物体各点的$\rho$为 1,则三个光源下相机分别得到的图像如图所示。</p>
+<p>![[Pasted image 20250428155136.png|center]]</p>
+<p>以物体表面的梯度$p、q$分别作为横纵坐标,将不同方向光源得到的亮度在同一图中画出等高线图如图所示。</p>
+<p>![[Pasted image 20250428155148.png|center]]</p>
+<p>若球上一点的的亮度在三个光源下分别为$I_1&#x3D;0.9107,I_2&#x3D;0.4740,I_3&#x3D;0.0842$, 则该点的梯度为三个光源下图像亮度等高线的交点$(p,q)&#x3D;(0.8 ,1)$,如下图所示。如图中所示,一个光源下同一亮度对应等高线上的无数个点,两条等高线的交点可能有两个,因此,至少需要三个光源来确定表面梯度。</p>
+<p>![[Pasted image 20250428155203.png|center]]</p>
+<p>当图像表面强度、光源方向已知时,可以求得表面法线方向和表面反射率相关参数。假设点 $(x,y)$ 处有三个光源$\pmb s_1,\pmb s_2,\pmb s_3$分别照射,得到的图像强度对应为$I_1,I_2,I_3$,则由朗伯表面光度立体模型有$I_{1}&#x3D; \rho \pmb n \cdot \pmb s_{1},I_{2}&#x3D; \rho \pmb n \cdot \pmb s_{2},I_{3}&#x3D; \rho \pmb n \cdot \pmb s_{3}$$,其中 ,$${\pmb n}&#x3D; \left[ n_{x},n_{y},n_{z} \right]^{T}$ ,$\pmb{s}<em>i&#x3D;\left[s</em>{ix}, s_{iy}, s_{iz} \right]^T$,可写成矩阵形式</p>
+<p>$$\left[ \begin{matrix} I_{1} \ I_{2} \ I_{3} \end{matrix} \right]&#x3D; \rho \left[ \begin{matrix} s_{1x}&amp;s_{1y}&amp;s_{1z} \ s_{2x}&amp;s_{2y}&amp;s_{2z} \ s_{3x}&amp;s_{3y}&amp;s_{3z} \end{matrix} \right] \pmb n \tag{17}$$</p>
+<p>令$I&#x3D; \left[ I_{1},I_{2},I_{3} \right]^{T}$，$S$为光源方向矩阵,有</p>
+<p>$$\pmb I&#x3D;\rho \pmb S \pmb n \tag{18}$$</p>
+<p>可得$\rho \pmb n &#x3D;\pmb S ^{-1} \pmb I$，只有当三个光源方向不共面时$\pmb S$可逆,满足此条件时可求得反射率相关参数$\rho &#x3D; \left| \pmb S^{-1}\pmb I \right|$,表面法线方向为</p>
+<p>$$\pmb n &#x3D;\frac{1}{\rho} \pmb S ^{-1} \pmb I \tag{19}$$</p>
+<blockquote>
+<p>[!note]<br>只有在表面点能同时被三个光源照射到时才能用式(19)计算表面法线方向。</p>
+</blockquote>
+<p>当光源数大于 3 时,可得到更好的结果,假设有$K$个方向的光源,对应公式变化为</p>
+<p>$$\left[ \begin{matrix} I_{1} \ I_{2} \ \vdots \ I_{K} \end{matrix} \right]&#x3D; \rho \left[ \begin{matrix} s_{1x}&amp;s_{1y}&amp;s_{1z} \ s_{2x}&amp;s_{2y}&amp;s_{2z} \ \vdots&amp; \vdots&amp; \vdots \ s_{Kx}&amp;s_{Ky}&amp;s_{Kz} \end{matrix} \right] \pmb n \tag{20} $$</p>
+<p>上式简写为$\pmb I &#x3D; \rho \pmb S \pmb n&#x3D;\pmb S \pmb N$,用最小二乘法估计有$\pmb S^T \pmb I&#x3D; \pmb S^T \pmb S \pmb N$，可求得</p>
+<p>$$\mathbf{N} &#x3D; \left(\mathbf{S}^{\texttt{T}}\mathbf{S}\right)^{ - 1} \mathbf{S}^{\texttt{T}}\mathbf{I} \tag{21}$$</p>
+<p>其中$\left(\mathbf{S}^{\texttt{T}}\mathbf{S}\right)^{\texttt{-1}}\mathbf{S}^{ \texttt{T}}$是伪逆矩阵。</p>
+<p>对于朗伯表面,多光源同时照射可等价为一个光源照射。由式(15)得,假设有两个不同方向光源同时照射朗伯表面,由它们分别单独照射时获取的图像强度$I_{1}&#x3D;c \frac{ \rho_{d}}{ \pi} \frac{J_{1}}{r_{1}^{2}}\pmb n \cdot \pmb {s}<em>{1}&#x3D; \frac{ \rho</em>{d}}{ \pi}k_{1}\pmb n \cdot \pmb {s}<em>{1}$,$I</em>{2}&#x3D;c \frac{ \rho_{d}}{ \pi} \frac{J_{2}}{r_{2}^{2}}\pmb n \cdot \pmb {s}<em>{2}&#x3D; \frac{ \rho</em>{d}}{ \pi}k_{2}\pmb n \cdot \pmb {s}<em>{2}$，同时照射得到的图像强度为$I&#x3D; \frac{ \rho</em>{d}}{ \pi} \pmb n \cdot \left( k_{1}\pmb s_{1}+k_{2}\pmb s_{2} \right)&#x3D; \frac{ \rho_{d}}{ \pi} \widehat{k}\pmb n \cdot \widehat{\pmb s}$，可等效为亮度参数为$\hat{k}$,方向为$\hat{ \pmb s}$的点光源。进一步 归纳可得多个点光源或扩展光源同时照射朗伯表面可等效为一个光源。</p>
+<h1 id="光度立体标定方法"><a href="#光度立体标定方法" class="headerlink" title="光度立体标定方法"></a>光度立体标定方法</h1><h2 id="查表法"><a href="#查表法" class="headerlink" title="查表法"></a>查表法</h2><p>查找表法是一种数据驱动的标定方法,也是视触觉传感器用于建立 RGB 强度与法线方向的常用方法。若两物体有相同的 BRDF,则它们表面同一法线方向在同一光源的照射下将有相同强度。视触觉传感器使用球形铝粉作为反射膜涂料,表面材料均一,对于不同的下压物体,由于摄像头拍摄到的图像是反射膜,BRDF是一致的,因此,查找表法适用于视触觉传感器。</p>
+<p>查找表法的思路如图所示,由于半球理论上有各个方向上的梯度,采用一球形物体进行标定。球半径和摄像头拍摄图像像素所对应的距离已知,根据球的几何关系,通过球下压后摄像头获取圆的半径,可得球下压的深度,结合球的半径得到表面梯度,也即得到图像的 RGB 强度与梯度之间的关系,令表的索引为 RGB 通道的强度,条目为对应的梯度值即得到查找表。实际标定时将球下压在视野的中间和四周,同一强度对应的梯度在各个位置求平均得到。</p>
+<p>![[Pasted image 20250428155223.png|center]]</p>
+<p>查找表法的优点是不用对物体表面提出假设,对于具有不同材料属性、反射率的反射膜不用假设表面反射情况,可以直接通过数据驱动获得查找表,此种方法对材料有较好的包容性。缺点是可移植性差,由于材料不同和反射膜制作工艺导致的膜的不稳定性,不同材料的反射膜或同一材料不同传感器的反射膜的查找表存在差异,且传感器的体积小,LED光源近,手动焊接可能存在误差,使得不同传感器之间的光源情况不易保持一致,所以更换传感器需重新进行标定。</p>
+<h2 id="神经网络法"><a href="#神经网络法" class="headerlink" title="神经网络法"></a>神经网络法</h2><p>由于视触觉传感器不符合无穷远点光度立体模型,当物体下压在传感器的不同位置(中心和四周)时梯度和强度的对应关系会产生变化。计算传感器不同位置的梯度角度与强度的对应如图所示,图中第一行为小球下压后的图片,并用圆圈标出接触区域圆,第二行为 x 方向(水平向右为正)的梯度转化为角度值所对应的 RGB 强度值,通过观察发现标定球下压在视触觉传感器的不同位置 x 方向上的梯度与 RGB 强度之间的关系有所不同,主要原因为光源是近点光源,物体和光源之间的距离会影响图像强度。</p>
+<p>![[Pasted image 20250428155241.png|center]]</p>
+<p>针对梯度和强度的关系受位置影响的情况,查找表法采用各个位置求平均的方式来降低误差。也可以通过神经网络的方法,将位置和强度作为输入,梯度作为输出, 用 BP 神经网络或卷积神经网络(CNN)建立强度、位置与梯度间的映射。神经网络法的优点是可以结合点的位置信息和强度估计点的梯度,且不受反射膜 表面材料的影响。缺点是训练时需要大量图片作为数据来源。</p>
+<h1 id="梯度场重构高度图算法"><a href="#梯度场重构高度图算法" class="headerlink" title="梯度场重构高度图算法"></a>梯度场重构高度图算法</h1><p>对于接触物体产生的彩色图像,通过图像强度获取表面各个点的梯度后,再用表面重构算法计算得到表面的高度。梯度是高度的微分,对梯度积分理论上可以求解高度,但由于获得的梯度具有噪声,直接通过积分获得表面高度可能造成误差的积累, 积分路径的选择不同也可能得到不同的结果,可以通过对不同路径的积分求平均可以减小噪声的影响。</p>
+<h2 id="Frankot-Chellappa-算法"><a href="#Frankot-Chellappa-算法" class="headerlink" title="Frankot-Chellappa 算法"></a>Frankot-Chellappa 算法</h2><p>Frankot-Chellappa 算法采用最小二乘法的思想,试图找到一个表面,使得估计的表面高度$z(x,y)$与测量的表面梯度之间的误差最小化,即最小化下式</p>
+<p>$$D&#x3D; \iint \left( \frac{ \partial z}{ \partial x}-p \right)^{2}+ \left( \frac{ \partial z}{ \partial y}-q \right)^{2}dxdy \tag{22}$$</p>
+<p>令$Z(u,v),P(u,v)$和$Q(u,v)$分别为$z(x, y),p(x,y)$和$q(x,y)$的傅里叶变换，公式如下所示</p>
+<p>$$Z \left( x,y \right)&#x3D; \iint_{- \infty}^{+ \infty}z \left( u,v \right) e^{j2 \pi \left( ux+vy \right)}dudv \newline P \left( x,y \right)&#x3D; \iint_{- \infty}^{+ \infty}p \left( u,v \right) e^{j2 \pi \left( ux+vy \right)}dudv\newline Q \left( x,y \right)&#x3D; \iint_{- \infty}^{+ \infty}q \left( u,v \right) e^{j2 \pi \left( ux+vy \right)}dudv \tag{23}$$</p>
+<p>在傅里叶域中最小化目标函数,即找到$Z(u, v)$使$D$最小化,有$\frac{\partial D}{\partial z}&#x3D;0$,令</p>
+<p>$$E \left( z,p,q,z_{x},z_{y} \right)&#x3D; \left( \frac{ \partial z}{ \partial x}-p \right)^{2}+ \left( \frac{ \partial z}{ \partial y}-q \right)^{2} \tag{24}$$</p>
+<p>根据欧拉-拉格朗日方程得</p>
+<p>$$\frac{ \partial E}{ \partial z}- \frac{d}{dx} \frac{ \partial E}{ \partial z_{x}}- \frac{d}{dy} \frac{ \partial E}{ \partial z_{y}}&#x3D;0 \tag{25}$$</p>
+<blockquote>
+<p>$$\frac{\partial E}{\partial z} &#x3D;0$$<br>$$\frac{\partial E}{\partial z_x} &#x3D; 2(z_x-p)$$<br>$$\frac{\partial E}{\partial z_x}&#x3D;2(z_x-q)$$<br>$$\frac{d}{dx} \frac{\partial E}{\partial z_x} &#x3D; 2 \frac{d}{dx}(z_X-p)&#x3D;2(z_{xx}-p_x)$$<br>$$\frac{d}{dy} \frac{\partial E}{\partial z_y} &#x3D; 2(z_{yy}-q_y)$$<br>带入式（25）得<br>$$0-2(z_{xx}-p_x)-2(z_{yy}-q_y)&#x3D;0$$<br>$$z_{xx}-z_{yy}&#x3D;p_x+q_y$$<br>即 $$\nabla^2z &#x3D; \frac{\partial p}{\partial x} +\frac{\partial q}{\partial y}$$<br>$\nabla^2$为拉普拉斯（Laplace）算子</p>
+</blockquote>
+<p>整理得到泊松方程<br>$$\nabla^2z&#x3D; \frac{\partial p}{\partial x} + \frac{\partial q}{\partial y} \tag{26}$$<br>将式（23）带入（26）得<br>  $$\widehat{Z} \left( u,v \right)&#x3D; \frac{uP \left( u,v \right)+vQ \left( u,v \right)}{2 \pi j \left( u^{2}+v^{2} \right)} \tag{27}$$ 再对$\widehat Z(u,v)$进行傅里叶逆变换得到估计表面高度$\hat z(x,y)$,实现从梯度场到高度场的重构。</p>
+<h1 id="光度立体法的三个假设"><a href="#光度立体法的三个假设" class="headerlink" title="光度立体法的三个假设"></a>光度立体法的三个假设</h1><ul>
+<li>摄像机的投影是正交的，图像上的点的坐标可以直接反映三维物体的表面坐标。</li>
+<li>每个光源发出的光束平行且均匀，这意味着必须使用强度均匀的远心照明光源，或者应该使用远点光源;并且光源的强度是已知的。</li>
+<li>最终的物体必须具有朗伯反射特性，即必须以漫反射的方式反射入射光;并且反射涂层的反射率是已知的。</li>
+</ul>
+<blockquote>
+<p>[!note]<br>要先对相机的相关参数进行标定</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Jinx</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/09/12/%E5%85%89%E5%AD%A6/">http://example.com/2025/09/12/%E5%85%89%E5%AD%A6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">Jinx</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%89%E5%AD%A6/">光学</a><a class="post-meta__tags" href="/tags/%E8%A7%86%E8%A7%A6%E8%A7%89%E4%BC%A0%E6%84%9F%E5%99%A8/">视触觉传感器</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/09/11/hello-world/" title="Hello World"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Hello World</div></div><div class="info-2"><div class="info-item-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post$ hexo new &quot;My New Post&quot;  More info: Writing Run server$ hexo server  More info: Server Generate static files$ hexo generate  More info: Generating Deploy to remote sites$ hexo deploy  More info: Deployment </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Jinx</div><div class="author-info-description">选择有时候比努力更重要</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Xinxin07" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%89%E5%BA%A6%E5%AD%A6%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text">光度学基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%89%E5%BA%A6%E5%AD%A6"><span class="toc-number">1.1.</span> <span class="toc-text">光度学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%90%E5%B0%84%E5%BA%A6%E5%AD%A6"><span class="toc-number">1.2.</span> <span class="toc-text">辐射度学</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%90%E5%B0%84%E8%83%BD%E9%80%9A%E9%87%8F-Radiant-energy"><span class="toc-number">1.3.</span> <span class="toc-text">辐射能通量    Radiant energy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E8%A7%81%E5%87%BD%E6%95%B0"><span class="toc-number">1.4.</span> <span class="toc-text">视见函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%89%E9%80%9A%E9%87%8F"><span class="toc-number">1.5.</span> <span class="toc-text">光通量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AB%8B%E4%BD%93%E8%A7%92-Solid-angle"><span class="toc-number">1.6.</span> <span class="toc-text">立体角  Solid angle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AE%E5%88%86%E7%AB%8B%E4%BD%93%E8%A7%92-Differential-Solid-Angles"><span class="toc-number">1.7.</span> <span class="toc-text">微分立体角  Differential Solid Angles</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%90%E5%B0%84%E5%BC%BA%E5%BA%A6-Radiant-intensity"><span class="toc-number">1.8.</span> <span class="toc-text">辐射强度  Radiant intensity</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%90%E5%B0%84%E4%BA%AE%E5%BA%A6-Radiance"><span class="toc-number">1.9.</span> <span class="toc-text">辐射亮度 Radiance</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%90%E5%B0%84%E7%85%A7%E5%BA%A6-Irradiance"><span class="toc-number">1.10.</span> <span class="toc-text">辐射照度  Irradiance</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%BA%E6%99%AF%E8%BE%90%E5%B0%84%E4%BA%AE%E5%BA%A6%E4%B8%8E%E5%9B%BE%E5%83%8F%E8%BE%90%E5%B0%84%E7%85%A7%E5%BA%A6%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.11.</span> <span class="toc-text">场景辐射亮度与图像辐射照度的关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8C%E5%90%91%E5%8F%8D%E5%B0%84%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0"><span class="toc-number">1.12.</span> <span class="toc-text">双向反射分布函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E5%B0%84%E6%96%B9%E7%A8%8B"><span class="toc-number">1.13.</span> <span class="toc-text">反射方程</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%89%E5%BA%A6%E7%AB%8B%E4%BD%93%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">光度立体法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%89%E5%BA%A6%E7%AB%8B%E4%BD%93%E6%A0%87%E5%AE%9A%E6%96%B9%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">光度立体标定方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E8%A1%A8%E6%B3%95"><span class="toc-number">3.1.</span> <span class="toc-text">查表法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%B3%95"><span class="toc-number">3.2.</span> <span class="toc-text">神经网络法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A2%AF%E5%BA%A6%E5%9C%BA%E9%87%8D%E6%9E%84%E9%AB%98%E5%BA%A6%E5%9B%BE%E7%AE%97%E6%B3%95"><span class="toc-number">4.</span> <span class="toc-text">梯度场重构高度图算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Frankot-Chellappa-%E7%AE%97%E6%B3%95"><span class="toc-number">4.1.</span> <span class="toc-text">Frankot-Chellappa 算法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%89%E5%BA%A6%E7%AB%8B%E4%BD%93%E6%B3%95%E7%9A%84%E4%B8%89%E4%B8%AA%E5%81%87%E8%AE%BE"><span class="toc-number">5.</span> <span class="toc-text">光度立体法的三个假设</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/12/%E5%85%89%E5%AD%A6/" title="光度学基础与光度立体法">光度学基础与光度立体法</a><time datetime="2025-09-12T08:25:24.267Z" title="发表于 2025-09-12 16:25:24">2025-09-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/09/11/hello-world/" title="Hello World">Hello World</a><time datetime="2025-09-11T07:24:50.917Z" title="发表于 2025-09-11 15:24:50">2025-09-11</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By Jinx</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.0</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
